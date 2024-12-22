@@ -35,22 +35,21 @@ Ensure you have the following installed on your system:
    ```sh
    git clone https://github.com/Sure-Mohan-Kumar/Mental_Fitness_Tracker
   
-2.Navigate to the project directory:
+ 2.Navigate to the project directory:
   ```sh
   cd mental_fitness_tracker
  ```
-3.Create and activate a virtual environment:
- ```
- sh
+ 3.Create and activate a virtual environment:
+  ```
+  sh
 
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-```
+  python -m venv venv
+  source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+  ```
 4.Install the required dependencies:
-
-pip install -r requirements.txt
-
-Public code references from 1 repository
+  ```sh
+  pip install -r requirements.txt
+  ```
 ### Usage
 1. Open the Jupyter Notebook:
   ```sh
