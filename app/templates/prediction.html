@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Your Mental Fitness Score</h2>
+<p>Overall Prevalence: {{ prediction }}</p>
+<p>
+    {% if prediction < 0.5 %}
+        This indicates a low risk of mental health issues.
+    {% elif prediction < 0.7 %}
+        This indicates a moderate risk of mental health issues.
+    {% else %}
+        This indicates a high risk of mental health issues. Consider consulting a mental health professional.
+    {% endif %}
+</p>
+<a href="{{ url_for('main.input_form') }}">Go Back</a>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Enter Your Details</h2>
+<form method="post" action="{{ url_for('main.input_form') }}">
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required><br>
+
+    <label for="exercise_frequency">Exercise Frequency (times per week):</label>
+    <input type="number" id="exercise_frequency" name="exercise_frequency" required><br>
+
+    <label for="sleep_hours">Sleep Hours (per night):</label>
+    <input type="number" id="sleep_hours" name="sleep_hours" required><br>
+
+    <label for="stress_level">Stress Level (1-10):</label>
+    <input type="number" id="stress_level" name="stress_level" required><br>
+
+    <label for="diet_quality">Diet Quality (1-10):</label>
+    <input type="number" id="diet_quality" name="diet_quality" required><br>
+
+    <label for="social_interaction">Social Interaction (hours per week):</label>
+    <input type="number" id="social_interaction" name="social_interaction" required><br>
+
+    <label for="screen_time">Screen Time (hours per day):</label>
+    <input type="number" id="screen_time" name="screen_time" required><br>
+
+    <label for="meditation_practice">Meditation Practice (minutes per day):</label>
+    <input type="number" id="meditation_practice" name="meditation_practice" required><br>
+
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
